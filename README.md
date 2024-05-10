@@ -2,7 +2,9 @@
 
 - [Install Terraform CLI](https://developer.hashicorp.com/terraform/install)
 - [Install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
-- Associente your credentials with `export AWS_ACCESS_KEY_ID=` and `export AWS_SECRET_ACCESS_KEY=`
+- You can associente your credentials with `export AWS_ACCESS_KEY_ID=` and `export AWS_SECRET_ACCESS_KEY=`
+- The AWS Key is set to be the file `aws-key.pub` in the project's root folder
+- Change the `user_data.sh` to your project's preferences and remember to keep your secrets safe.
 
 
 ### Useful links:

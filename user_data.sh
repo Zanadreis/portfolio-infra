@@ -6,5 +6,6 @@ yum install -y docker
 service docker start
 usermod -a -G docker ec2-user
 
-docker run --publish --detach 3000:3000 zanadreis/portifolio-frontend
-docker run --publish --detach 5000:5000 zanadreis/portifolio-backend
+docker login --username DOCKER_USER --password DOCKER_PASSWORD
+docker run --publish --detach --env BAR=FOO 3000:__PORT__ DOCKER_USER/FRONTEND:VERSION
+docker run --publish --detach --env BAR=FOO 5000:__PORT__ DOCKER_USER/BACKEND:VERSION
